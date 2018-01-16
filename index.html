@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C-discount</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src='jquery.zoom.js'></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-light" style="z-index:100;">
+    <img src="https://i2.cdscdn.com/RWD/header/nLogo.png" alt="">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control  mr-sm-2" type="text" placeholder="Rechercher" aria-label="Search">
+    </form>
+
+
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle drop-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            C-discount à volonté
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
+    <button type="button" class="btn btn-danger drop-button" style="background-color: #fcae5a">Mon compte</button>
+    <button type="button" class="btn btn-warning drop-button" style="background-color: green;">Panier</button>
+
+
+</nav>
+
+<nav aria-label="breadcrumb fixed-top bg-light" style="z-index: -100;">
+    <ol class="breadcrumb fixed-top bg-light" style="z-index: 10;">
+        <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+        <li class="breadcrumb-item"><a href="#">Liste aspirateur</a></li>
+        <li class="breadcrumb-item active" aria-current="page">H.KOENIG SLC80</li>
+    </ol>
+</nav>
+<!--
+<div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" style="color:#111" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="color:#111" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" style="color:#111" href="#">Disabled</a>
+        </li>
+    </ul>
+
+</div>
+</nav>
+
+-->
+
+<!--carrousel-->
+<div class="jumbotron">
+    <section id="product">
+
+        <div class="container">
+            <h2 class="display-4 ml-5 pb-3">H.KOENIG SLC80 &nbsp;&nbsp; <span
+                    class="badge badge-secondary">Promotion</span></h2>
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                            <span class='zoom ex1'>
+                                <img class="d-block img-fluid" src="aspriateur.jpg" alt="First slide">
+
+                            </span>
+                            </div>
+                            <div class="carousel-item">
+                            <span class='zoom ex1'>
+                                <img class="d-block img-fluid" src="aspirateur-two.jpg" alt="Second slide"></span>
+                            </div>
+                            <div class="carousel-item">
+                            <span class='zoom ex1'>
+                              <img class="d-block img-fluid" src="energy.jpg" alt="Third slide">
+                            </span>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                           data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                           data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <section id="content">
+                        <h3 class="display-5"> Silence Aspirateur traîneau sans sac <br> 700W - 74 dB - A</h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ex harum totam vero? Aut
+                            culpa,
+                            deserunt earum excepturi fuga illum, modi molestias necessitatibus, neque nobis numquam odit
+                            provident
+                            repellat ullam!
+                        </p>
+                        <h4>59,99 €</h4>
+                        <div id="star"  data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+
+                            <span class="fa fa-star checked " ></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div class="container pb-3">
+                            <button type="button">
+                                <a href="#" title="Header" data-toggle="popover" data-trigger="hover"
+                                   data-content="Some content">Lire les avis</a></button>
+                        </div>
+                        <button type="button" class="btn btn-warning button-buy">Ajouter au panier</button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="similar-product">
+        <section class="container-fluid">
+            <h2 class="similar-title">Produit similaire</h2>
+            <div class="container-fluid">
+                <div class="row pb-3">
+                    <div class="col-lg-3 text-center">
+                        <img class="resize" src="aspira-1.jpg" alt="aspirateur">
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <img class="resize" src="aspira-2.jpg" alt="aspirateur">
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <img class="resize" src="aspira-3.jpg" alt="aspirateur">
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <img class="resize" src="aspira-4.jpg" alt="aspirateur">
+                    </div>
+                </div>
+                <h2 class="similar-title pb-4">Compléter vos achats</h2>
+                <div class="row pl-2">
+                    <div class="col-lg-3 text-center">
+                        <img class="resize" src="comp-1.jpg" alt="complément">
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <img class="resize" src="comp-2.jpg" alt="complément">
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <img class="resize" src="comp-3.jpg" alt="complément">
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <img class="resize" src="comp-4.jpg" alt="complément">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="jumbotron">
+        <section class="info-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <section class="info-photo">
+                            <img class="info-change" src="koening.jpeg" alt="koening">
+                        </section>
+                    </div>
+                    <div class="col-lg-6">
+                        <section class="info-product">
+                            <h3 class="info-description">
+                                Descriptif : H.KOENIG SLC80 Silence Aspirateur sans sac - 700W - 74 dB - A
+                            </h3>
+                            <h5 class="info-description">
+                                Information général
+                            </h5>
+                            <table>
+
+                                <tr>
+
+                                    <td>Marque</td>
+                                    <td class="info">HKOENIG</td>
+                                </tr>
+                                <tr>
+                                    <td>Nom de Produit</td>
+                                    <td class="info">H.KOENIG SLC80 Silence Aspirateur traîneau sans sa</td>
+                                </tr>
+                                <tr>
+                                    <td>Catégorie</td>
+                                    <td class="info">ASPIRATEUR TRAINEAU</td>
+                                </tr>
+                                <tr>
+                                    <td>Type de Produit</td>
+                                    <td class="info">Aspirateur</td>
+                                </tr>
+                                <tr>
+                                    <td>Type de filtre</td>
+                                    <td class="info">Sans sac</td>
+                                </tr>
+                                <tr>
+                                    <td>Type de nettoyant</td>
+                                    <td class="info">Tube téléscopique, enrouleur de câble, jeu d'outils embarqué,
+                                        puissance
+                                        d'aspiration variable, Silence +
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Type d'aspirateur</td>
+                                    <td class="info">HEPA</td>
+                                </tr>
+                                <tr>
+                                    <td>Puissance éléctrique</td>
+                                    <td class="info">700 watt</td>
+                                </tr>
+                                <tr>
+                                    <td>Type d'alimentation</td>
+                                    <td class="info">Usage général</td>
+                                </tr>
+                                <tr>
+                                    <td>longeur de cordon</td>
+                                    <td class="info">4,8cm</td>
+                                </tr>
+                                <tr>
+                                    <td>Matériau du tube</td>
+                                    <td class="info">Métal</td>
+                                </tr>
+                                <tr>
+                                    <td>Rayon d'action</td>
+                                    <td class="info">8 cm</td>
+                                </tr>
+                                <tr>
+                                    <td>Outil inclus</td>
+                                    <td class="info">Brosse à tapis</td>
+                                </tr>
+                            </table>
+                            <br>
+                            <h3 class="info-description">Avis client : H.KOENIG SLC80 Silence Aspirateur sans sac - 700W
+                                - 74 dB - A</h3>
+
+
+
+                                <h3 class="info-number">4</h3>
+
+                                <div class="star" style="text-align: center">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+
+                            <div class="info-comment">
+                                <h5 class="info-description">
+                                    Les derniers avis
+                                </h5>
+                                <h4>Excellent aspirateur</h4>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+
+                                <p>Alors déjà je tien a souligner en voyant les avis des personnes j'ai failli ne pas acheter cette aspirateur puis vu son prix je l'ai quand même pris alors s'il vous plait sachet mettre de vraie avis et non vos avis faux. Donc j'ai déjà eu plusieurs aspirateur je suis vraiment content a cette puissance l'aspirateur et vraiment silencieux et en plus il et très beau comme sur la photo mais en vraie il a vraiment de la guele</p>
+                                <div class="info-comment">
+
+                                    <h4> Bien mais manque de performance</h4>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero repudiandae tempora. Accusamus corporis dicta dignissimos ducimus eaque, eveniet, explicabo fugit ipsam laudantium necessitatibus neque nisi officia omnis sequi veniam!</p>
+                                </div>
+
+                            </div>
+
+                            <!--collapse -->
+
+                            <div id="exampleAccordion" data-children=".item">
+
+                                <div class="item">
+
+                                    <div id="exampleAccordion2" class="collapse" role="tabpanel">
+                                        <div class="info-comment">
+
+                                            <h4>Très bien</h4>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero repudiandae tempora. Accusamus corporis dicta dignissimos ducimus eaque, eveniet, explicabo fugit ipsam laudantium necessitatibus neque nisi officia omnis sequi veniam!</p>
+
+                                        </div>
+                                        <div class="info-comment">
+
+                                            <h4>Trop de bruyant</h4>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero repudiandae tempora. Accusamus corporis dicta dignissimos ducimus eaque, eveniet, explicabo fugit ipsam laudantium necessitatibus neque nisi officia omnis sequi veniam!</p>
+
+                                        </div>
+                                        <div class="info-comment">
+
+                                            <h4>Bon</h4>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero repudiandae tempora. Accusamus corporis dicta dignissimos ducimus eaque, eveniet, explicabo fugit ipsam laudantium necessitatibus neque nisi officia omnis sequi veniam!</p>
+
+                                        </div>
+                                        <div class="info-comment">
+
+                                            <h4> Bien mais manque de performance</h4>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero repudiandae tempora. Accusamus corporis dicta dignissimos ducimus eaque, eveniet, explicabo fugit ipsam laudantium necessitatibus neque nisi officia omnis sequi veniam!</p>
+                                        </div>
+
+
+                                    </div>
+                                    <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion2" role="button" aria-expanded="false" aria-controls="exampleAccordion2">
+                                        <button type="button" class="info-button">
+                                            Voir plus
+                                        </button>
+                                    </a>
+
+
+                                </div>
+                                <div id="sidebar" style="z-index: 1">
+                                    <div id="scroller-anchor"></div>
+                                    <div id="scroller" style="margin-top:10px; z-index: 1">
+                                        <div class="card"  style="width:453px;z-index: 0">
+                                            <img class="card-img-top" style="width:450px;z-index: 1; height:400px;"  src="aspriateur.jpg" alt="Card image cap">
+                                            <div class="card-body" style="width:450px;">
+                                                <h5 class="card-title">Aspirateur silencieux</h5>
+                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary text-center">Ajouter au panier</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <script type="text/javascript">
+                                    $(function() {
+                                        moveScroller();
+                                    });
+                                </script>
+                            </div>
+                        </section>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </section>
+
+</div>
+<footer style="z-index:3;">
+
+    <img src="assets/search_images/logo.png" alt="logo" class="logo">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 col-md-6  col-sm-6 pl-4 pb-4">
+
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#">Pour mieux vous connaître</a></li>
+                    <li class="list-group-item"><a href="#">À propos de c-discount</a></li>
+                    <li class="list-group-item"><a href="#">Carrière</a></li>
+                    <li class="list-group-item"><a href="">c-discout et notre planète</a></li>
+                    <li class="list-group-item"><a href="">c-discount ensemble</a></li>
+
+
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 pl-4 pb-4">
+
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#">Pour mieux vous connaître</a></li>
+                    <li class="list-group-item"><a href="#">À propos de c-discount</a></li>
+                    <li class="list-group-item"><a href="#">Carrière</a></li>
+                    <li class="list-group-item"><a href="">c-discout et notre planète</a></li>
+                    <li class="list-group-item"><a href="">c-discount ensemble</a></li>
+
+
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 pl-4">
+
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#">Pour mieux vous connaître</a></li>
+                    <li class="list-group-item"><a href="#">À propos de c-discount</a></li>
+                    <li class="list-group-item"><a href="#">Carrière</a></li>
+                    <li class="list-group-item"><a href="">c-discout et notre planète</a></li>
+                    <li class="list-group-item"><a href="">c-discount ensemble</a></li>
+
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6  col-sm-6 pl-4">
+
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#">Pour mieux vous connaître</a></li>
+                    <li class="list-group-item"><a href="#">À propos de c-discount</a></li>
+                    <li class="list-group-item"><a href="#">Carrière</a></li>
+                    <li class="list-group-item"><a href="">c-discout et notre planète</a></li>
+                    <li class="list-group-item"><a href="">c-discount ensemble</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<script>
+
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+    $(document).ready(function () {
+        $('.ex1').zoom();
+    });
+
+    function moveScroller() {
+        var $anchor = $("#scroller-anchor");
+        var $scroller = $('#scroller');
+
+        var move = function() {
+            var st = $(window).scrollTop();
+            var ot = $anchor.offset().top;
+            if(st > ot) {
+                $scroller.css({
+                    position: "fixed",
+                    top: "0px"
+                });
+            } else {
+                $scroller.css({
+                    position: "relative",
+                    top: ""
+                });
+            }
+        };
+        $(window).scroll(move);
+        move();
+    }
+
+</script>
+</body>
+</html>
